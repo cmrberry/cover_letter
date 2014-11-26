@@ -1,6 +1,12 @@
-<h1>Sample App</h1>
-<p>
-  This is the home page for the
-  <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application.
-</p>
+<div class="center jumbotron">
+  <h1>Rachel Berry has a Dream</h1>
+
+  <h2>
+    to work for one of these amazing companies
+  </h2>
+
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("Ruby_on_Rails_logo.jpg", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
