@@ -10,10 +10,13 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require_self
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require turbolinks
 //= require skrollr
 //= require skrollr.menu
 //= require skrollr.ie
 //= require_tree .
+

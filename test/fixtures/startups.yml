@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  domain: MyString
+  desc: MyString
+  logo: MyString
+  header: MyString
+  ranking: 1
+
+two:
+  name: MyString
+  domain: MyString
+  desc: MyString
+  logo: MyString
+  header: MyString
+  ranking: 1
