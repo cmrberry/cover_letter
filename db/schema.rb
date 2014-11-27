@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141127012635) do
+ActiveRecord::Schema.define(version: 20141127085739) do
+
+  create_table "reqs", force: true do |t|
+    t.string   "title"
+    t.text     "desc"
+    t.integer  "sort"
+    t.integer  "startup_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "reqs", ["startup_id"], name: "index_reqs_on_startup_id"
 
   create_table "startups", force: true do |t|
     t.string   "name"
