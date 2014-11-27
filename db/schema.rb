@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20141127085739) do
     t.datetime "updated_at"
   end
 
+  add_index "reqs", ["startup_id", "sort"], name: "index_reqs_on_startup_id_and_sort"
   add_index "reqs", ["startup_id"], name: "index_reqs_on_startup_id"
 
   create_table "startups", force: true do |t|

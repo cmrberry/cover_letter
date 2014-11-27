@@ -8,5 +8,6 @@ class CreateReqs < ActiveRecord::Migration
       
       t.timestamps
     end
+    add_index :reqs, [:startup_id, :sort]
   end
 end

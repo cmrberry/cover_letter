@@ -6,6 +6,7 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
+$green: #309b32;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -99,7 +100,7 @@ table img {
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: $green;
     text-shadow: none;
 }
 
@@ -168,7 +169,7 @@ footer {
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
   a ,a:visited {
-    color: #309b32;
+    color: $green;
     &:hover {
         color: $gray-light;
         text-decoration:none;
@@ -303,11 +304,11 @@ main {
     height: 2.35em;
     text-align: center;
     background:none;
-    margin-bottom:18px;
+    margin:18px 0;
     li {
       display: inline-block;
       float: none;
-      margin: 0em;
+      margin: 0 20px;
       border-radius:4px;
       box-shadow: 1px 1px 1px #888888;
     }
@@ -318,7 +319,10 @@ main {
   background:none;
   border:none;
   .ui-tabs-panel {
-    background: rgba(255,255,255,.5);
+    background: rgba(255,255,255,.7);
     border-radius: 4px;
+    a {
+      color: $green;
+    }
   }
 }
