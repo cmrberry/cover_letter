@@ -5,8 +5,8 @@ class StartupsController < ApplicationController
   
   def show
     @startup = Startup.find(params[:id])
-    @reqs = @startup.reqs
-    @reasons = @startup.reasons
+    @reqs = @startup.reqs.sort_by{|r| r[:sort]}
+    @reasons = @startup.reasons.sort_by{|r| r[:sort]}
   end
   
 end

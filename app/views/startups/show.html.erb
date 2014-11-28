@@ -59,7 +59,7 @@
 	  					<div class="item" style="background-image:url(<%= reason.img %>);">
 	  						<div class="reason">
 	  							<h1><%= reason.title %></h1>
-	  							<p><%= reason.desc %></p>
+	  							<p><%=raw reason.desc %></p>
 	  						</div>
 	  					</div>
   					<% end %>
@@ -100,7 +100,8 @@
 		      navigation : true, // Show next and prev buttons
 		      slideSpeed : 300,
 		      paginationSpeed : 400,
-		      singleItem:true
+		      singleItem:true,
+		      autoPlay: 7000, //Set AutoPlay to 7 seconds
 		  });
 		});
 	</script>
