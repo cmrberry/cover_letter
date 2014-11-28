@@ -20,7 +20,7 @@
   		<div class="hsContent" data-100-bottom="opacity: 0" data--100-bottom="opacity: 1" data-100-top="opacity: 1" data--200-top="opacity: 0" data-anchor-target="#slide-2 h2">
   			<h1>My name is Rachel Berry</h1>
     		<h2>I'm an industrial engineer turned <%= @startup.job %></h2>
-    		<h3 style="color:#fff;">and I've been working hard to build the skills you need:</h3>
+    		<h3>and I've been working hard to build the skills you need:</h3>
     		<div id="tabs" class="centered">
 				  <ul>
 				  	<% @reqs.each do |req| %>
@@ -37,6 +37,18 @@
     	</div>
   	</div>
 	</section>
+	
+	<section id="slide-3">
+  	<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-3">
+    	<div class="hsContainer">
+    		<div class="hsContent" data-200-bottom="opacity: 0" data--100-bottom="opacity: 1" data--106-top="opacity: 0" data-anchor-target="#slide-3 h2">
+	    		<h1><%= @startup.name %> is the perfect place</h1>
+	    		<h2>for me to dive in, work hard, learn fast, and make a real difference.</h2>
+	    		<h3>Here are a few reasons why:</h3>
+    		</div>
+      	</div>
+  	</div>
+  </section>
 </main>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	   

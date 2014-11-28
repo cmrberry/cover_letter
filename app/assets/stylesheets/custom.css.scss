@@ -259,8 +259,6 @@ main {
 .hsContent h2,
 .copy h2 {
 	color: #ffffff;
-	font-size: 40px;
-	line-height: 42px;
 	margin-bottom: 12px;
 }
 
@@ -279,6 +277,9 @@ main {
   a {
   	color: #b2b2b2;
   	text-decoration: underline;
+  }
+  h3 {
+    color:#fff;
   }
 }
 
@@ -325,4 +326,9 @@ main {
       color: $green;
     }
   }
+}
+
+// Slide 3
+#slide-3 .bcg{
+    padding: 5% 0;
 }
