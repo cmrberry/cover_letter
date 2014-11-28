@@ -12,6 +12,12 @@ $green: #309b32;
   background-size: cover;
 }
 
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 .jumbotron {
   background:none;
   h1 {
@@ -19,6 +25,11 @@ $green: #309b32;
   }
   h2 {
     color:$gray-lighter;
+    margin:0;
+  }
+  h3 {
+    color: #fff;
+    margin:10px;
   }
   a, a:hover{
     color: $green;

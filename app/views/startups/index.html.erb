@@ -2,13 +2,14 @@
 	<div class="container">
 		<div class="center jumbotron">
 		  <h1>Rachel Berry</h1>
-		  <h2> would love to work for one of these amazing companies</h2>
+		  <h2>is a developer, data pro, and customer service hero</h2>
+		  <h3>who would love to work with one of these awesome companies:</h3>
 		</div>
 	</div>
 	
 	<div class="container startups">
 		<% @startups.each do |s| %>
-			<figure class="effect col-sm-3">
+			<figure class="effect col-sm-3 col-centered">
 				<%= image_tag(s.logo, alt: s.name + " logo", class: "logo", width:"100%") %>
 				<figcaption>
 					<div>
