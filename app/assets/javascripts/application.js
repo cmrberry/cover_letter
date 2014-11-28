@@ -18,5 +18,6 @@
 //= require skrollr
 //= require skrollr.menu
 //= require skrollr.ie
+//= require owl.carousel
 //= require_tree .
 

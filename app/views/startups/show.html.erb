@@ -17,23 +17,23 @@
 	 <section id="slide-2">
   	<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -200px;" data-anchor-target="#slide-2">
     	<div class="hsContainer">
-  		<div class="hsContent" data-100-bottom="opacity: 0" data--100-bottom="opacity: 1" data-100-top="opacity: 1" data--200-top="opacity: 0" data-anchor-target="#slide-2 h2">
-  			<h1>My name is Rachel Berry</h1>
-    		<h2>I'm an industrial engineer turned <%= @startup.job %></h2>
-    		<h3>and I've been working hard to build the skills you need:</h3>
-    		<div id="tabs" class="centered">
-				  <ul>
-				  	<% @reqs.each do |req| %>
-				    <li><a href="#tabs-<%= req.sort %>"><%= req.title %></a></li>
-				    <% end %>
-				  </ul>
-				  <% @reqs.each do |req| %>
-				  <div id="tabs-<%= req.sort %>">
-				    <p><%=raw req.desc %></p>
-				  </div>
-				  <% end %>
-				</div>
-  		</div>
+	  		<div class="hsContent" data-100-bottom="opacity: 0" data--100-bottom="opacity: 1" data-100-top="opacity: 1" data--200-top="opacity: 0" data-anchor-target="#slide-2 h2">
+	  			<h1>My name is Rachel Berry</h1>
+	    		<h2>I'm an industrial engineer turned <%= @startup.job %></h2>
+	    		<h3>and I've been working hard to build the skills you need:</h3>
+	    		<div id="tabs" class="centered">
+					  <ul>
+					  	<% @reqs.each do |req| %>
+					    <li><a href="#tabs-<%= req.sort %>"><%= req.title %></a></li>
+					    <% end %>
+					  </ul>
+					  <% @reqs.each do |req| %>
+					  <div id="tabs-<%= req.sort %>">
+					    <p><%=raw req.desc %></p>
+					  </div>
+					  <% end %>
+					</div>
+	  		</div>
     	</div>
   	</div>
 	</section>
@@ -46,9 +46,41 @@
 	    		<h2>for me to dive in, work hard, learn fast, and make a real difference.</h2>
 	    		<h3>Here are a few reasons why:</h3>
     		</div>
-      	</div>
+      </div>
   	</div>
   </section>
+  
+  <section id="slide-4">
+  	<div class="bcg">
+    	<div class="hsContainer">
+    		<div class="hsContent" data-bottom-top="opacity: 0" data-center-top="opacity: 1" data-anchor-target="#slide-4">
+	    		<div class="owl-carousel">
+	    			<% @reasons.each do |reason| %>
+	  					<div class="item" style="background-image:url(<%= reason.img %>);">
+	  						<div class="reason">
+	  							<h1><%= reason.title %></h1>
+	  							<p><%= reason.desc %></p>
+	  						</div>
+	  					</div>
+  					<% end %>
+  				</div>
+    		</div>
+      </div>
+  	</div>
+  </section>
+  
+  <section id="slide-5">
+  	<div class="bcg">
+    	<div class="hsContainer">
+    		<div class="hsContent" data-100-end="opacity: 0" data-end="opacity: 1" data-anchor-target="#slide-5 p">
+	    		<h1>TL;DR:</h1>
+	    		<p>You're a fast-growing company who needs a quick learner to help build your awesome product and culture. That's me.<br />
+	    				Check out the links below for more info and then <%= link_to("get in touch", "mailto:crb@berrycs.com") %>!</p>
+    		</div>
+      </div>
+  	</div>
+  </section>
+  
 </main>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	   
@@ -60,6 +92,17 @@
 	    	active: false
 	    });
 	  });
+	  </script>
+	  
+	  <script>
+	  $(document).ready(function() {
+		  $(".owl-carousel").owlCarousel({
+		      navigation : true, // Show next and prev buttons
+		      slideSpeed : 300,
+		      paginationSpeed : 400,
+		      singleItem:true
+		  });
+		});
 	</script>
 	
   <%= javascript_include_tag :application %>

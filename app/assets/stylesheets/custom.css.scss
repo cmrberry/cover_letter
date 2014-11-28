@@ -224,7 +224,7 @@ body, html {
 	background: image-url('ico_loading.gif') no-repeat center center;
 }
 section {
-	min-width: 960px;
+	//min-width: 960px;
   // opacity: 0; 
 }
 
@@ -269,7 +269,7 @@ main {
 	vertical-align: middle;
 	color: #ebebeb;
 	padding: 0 8%;
-	text-align: center
+	text-align: center;
   p {
   	margin: 0 auto;
   	color: #b2b2b2;
@@ -302,7 +302,6 @@ main {
 }
 .centered {
   .ui-tabs-nav {
-    height: 2.35em;
     text-align: center;
     background:none;
     margin:18px 0;
@@ -331,4 +330,59 @@ main {
 // Slide 3
 #slide-3 .bcg{
     padding: 5% 0;
+}
+
+//Slide 4
+#slide-4 {
+  .hsContent {
+  padding:0;
+  margin:0;
+  }
+  .owl-carousel .item {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background: no-repeat;
+    background-size: cover;
+    background-origin: center center;
+  }
+  .reason {
+    width:50%;
+    height:100%;
+    margin: 0 auto;
+    padding:5%;
+    background: rgba(0,0,0,.7);
+    p {
+      color:$gray-lighter;
+    }
+  }
+  .owl-controls {
+    margin-top: -60px;
+  }
+  .owl-pagination {
+    position: relative;
+    top: 20px;
+  }
+  .owl-buttons {
+    position: relative;
+    top: -210px;
+    background:$gray-light;
+    div {
+      opacity: .75;
+    }
+    .owl-prev {
+      float: left;
+      margin-left: 20%;
+    }
+    .owl-next {
+      float: right;
+      margin-right: 20%;
+    }
+  }
+}
+
+//Slide 5
+#slide-5 .bcg {
+  background: #000;
+  padding: 0 0 20px 0;
 }
