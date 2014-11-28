@@ -8,7 +8,7 @@
 
 startup = Startup.create( name: "Buffer", 
                           domain: "http://www.bufferapp.com/", 
-                          desc: "the easiest way to publish on social media", 
+                          desc: "transforming social media with happiness and transparency", 
                           logo: "https://bufferapp.com/images/press/logo-icon.png", 
                           header: "https://open.bufferapp.com/wp-content/uploads/2014/05/hackpad.com_wGFjelPr9og_p.58032_1399592424677_Bufferonrock.jpg", 
                           ranking: 10, 

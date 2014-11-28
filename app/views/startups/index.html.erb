@@ -13,8 +13,8 @@
 				<%= image_tag(s.logo, alt: s.name + " logo", class: "logo", width:"100%") %>
 				<figcaption>
 					<div>
-						<h2>BUFFER</h2>
-						<p>transforming social media with happiness and transparency</p>
+						<h2><%= s.name.upcase %></h2>
+						<p><%= s.desc.upcase %></p>
 					</div>
 					<a href="/startups/<%= s.id %>">View more</a>
 				</figcaption>			
