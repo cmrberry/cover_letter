@@ -272,10 +272,10 @@ main {
 	text-align: center;
   p {
   	margin: 0 auto;
-  	color: #b2b2b2;
+  	color: $gray-lighter;
   }
   a {
-  	color: #b2b2b2;
+  	color: $green;
   	text-decoration: underline;
   }
   h3 {
@@ -318,6 +318,9 @@ main {
 .ui-tabs {
   background:none;
   border:none;
+  p {
+    color: $gray-dark;
+  }
   .ui-tabs-panel {
     background: rgba(255,255,255,.7);
     border-radius: 4px;
