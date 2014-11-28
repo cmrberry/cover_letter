@@ -13,7 +13,7 @@
 //= require_self
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui
+//= require jquery-ui/tabs
 //= require turbolinks
 //= require skrollr
 //= require skrollr.menu

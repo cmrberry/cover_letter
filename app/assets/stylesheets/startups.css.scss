@@ -1,3 +1,190 @@
 // Place all the styles related to the Startups controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$gray-medium-light: #eaeaea;
+$green: #309b32;
+
+.background {
+  background: image-url('bcg_me.jpg') fixed;
+  background-size: cover;
+}
+
+.jumbotron {
+  background:none;
+  h1 {
+    color: #fff;
+  }
+  h2 {
+    color:$gray-lighter;
+  }
+  a, a:hover{
+    color: $green;
+  }
+}
+
+.startups {
+  padding-bottom:40px;
+  .logo-cntr {
+  border-radius:5px;
+  border: solid 1px $gray-lighter;
+  padding:0;
+  }
+}
+
+.logo-overlay {
+  background: rgba(0,0,0,.7);
+  color:#fff;
+  border-radius:5px;
+  text-align:center;
+  a {
+    display:block;
+    width:100%;
+    height:100%;
+    color:#fff;
+    text-decoration:none;
+  }
+  h2 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin:0;
+  }
+}
+
+/*---------------*/
+/***** Effect *****/
+/*---------------*/
+
+/* Common style */
+figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	//margin: 10px 1%;
+	//min-width: 320px;
+	//max-width: 480px;
+	//max-height: 360px;
+	//width: 48%;
+	background: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	cursor: pointer;
+	border-radius:5px;
+}
+
+figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+	pointer-events: none;
+}
+
+figure figcaption,
+figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+figure h2 span {
+	font-weight: 800;
+}
+
+figure h2,
+figure p {
+	margin: 0;
+}
+
+figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+//Actual Effect
+
+figure.effect img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.12);
+	transform: scale(1.12);
+}
+
+figure.effect:hover img {
+	opacity: 0.5;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect figcaption {
+	padding: 3em;
+}
+
+figure.effect figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+figure.effect figcaption::before,
+figure.effect p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect h2 {
+	padding: 0 0 20px 0;
+}
+
+figure.effect p {
+	margin: 0 auto;
+	max-width: 200px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect:hover figcaption::before,
+figure.effect:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}

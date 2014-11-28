@@ -1,0 +1,31 @@
+<div class="background">
+	<div class="container">
+		<div class="center jumbotron">
+		  <h1>Rachel Berry</h1>
+		  <h2> would love to work for one of these amazing companies</h2>
+		</div>
+	</div>
+	
+	<div class="container startups">
+		<% @startups.each do |s| %>
+			<figure class="effect col-sm-3">
+				<%= image_tag(s.logo, alt: s.name + " logo", class: "logo", width:"100%") %>
+				<figcaption>
+					<div>
+						<h2>BUFFER</h2>
+						<p>transforming social media with happiness and transparency</p>
+					</div>
+					<a href="/startups/<%= s.id %>">View more</a>
+				</figcaption>			
+			</figure>
+		<% end %>
+	</div>
+	
+	<div class="container">
+		<div class="center jumbotron">
+		  <h2>Don't see your company here?</h2>
+		  <h2><%= link_to("Get in touch!", "mailto:crb@berrycs.com") %></h2>
+		</div>
+	</div>
+	
+</div>

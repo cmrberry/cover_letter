@@ -9,4 +9,8 @@ class StartupsController < ApplicationController
     @reasons = @startup.reasons.sort_by{|r| r[:sort]}
   end
   
+  def index
+    @startups = Startup.all
+  end
+  
 end
