@@ -1,5 +1,6 @@
 class Startup < ActiveRecord::Base
   has_many :reqs
+  has_many :reasons
   
   validates :name,  presence: true, length: { maximum: 50,
                                       too_long: "Max char count is %{count}!"}
