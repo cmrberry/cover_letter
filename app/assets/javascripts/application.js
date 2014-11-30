@@ -15,9 +15,8 @@
 //= require jquery_ujs
 //= require jquery-ui/tabs
 //= require turbolinks
-//= require skrollr
-//= require skrollr.menu
-//= require skrollr.ie
 //= require owl.carousel
+//= require skrollr
+//= require _main
 //= require_tree .
 
