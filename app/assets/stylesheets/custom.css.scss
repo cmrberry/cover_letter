@@ -20,6 +20,7 @@ $green: #309b32;
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #000;
 }
 
 section {
@@ -348,14 +349,17 @@ main {
   .owl-carousel .item {
     display: block;
     width: 100%;
-    height: 500px;
+    height: 100%;
     background: no-repeat;
     background-size: cover;
     background-origin: center center;
   }
-  .reason {
-    width:50%;
+  .owl-item {
     height:100%;
+  }
+  .reason {
+    width: 50%;
+    min-height: 500px;
     margin: 0 auto;
     padding:5%;
     background: rgba(0,0,0,.7);

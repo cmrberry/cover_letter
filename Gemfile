@@ -18,7 +18,6 @@ gem 'turbolinks',              '2.3.0'
 gem 'jbuilder',                '2.2.3'
 gem 'font-awesome-sass',       '~> 4.2.0'
 gem 'owlcarousel-rails'
-gem 'skrollr-rails'
 gem 'modernizr-rails'
 gem 'arel',                    '6.0.0.beta2'
 gem 'sdoc',                    '0.4.0', group: :doc
