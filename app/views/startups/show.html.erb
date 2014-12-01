@@ -83,7 +83,7 @@
   
 </main>
 	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	   
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	   
   	
 	<script>
 	  $(document).ready(function() {
@@ -113,7 +113,26 @@
 	<![endif]-->
 
 	
-	<script type="text/javascript">
+<script>
+  var myWidth = 0, myHeight = 0;
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+    //IE 6+ in 'standards compliant mode'
+    myWidth = document.documentElement.clientWidth;
+    myHeight = document.documentElement.clientHeight;
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+    //IE 4 compatible
+    myWidth = document.body.clientWidth;
+    myHeight = document.body.clientHeight;
+  };
+  
+  if ( myWidth >= 768 ) {
+  	
+	//window.alert( 'Width = ' + myWidth );
+	
 	var s = skrollr.init({
 		forceHeight: false,
 		edgeStrategy: 'set',
@@ -124,4 +143,9 @@
 			}
 		}
 	});
-	</script>
+	
+  };
+
+</script>
+	
+	

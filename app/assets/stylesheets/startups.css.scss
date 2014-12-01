@@ -7,6 +7,10 @@
 $gray-medium-light: #eaeaea;
 $green: #309b32;
 
+body {
+	background: #000;
+}
+
 .background {
   background: image-url('bcg_me.jpg') fixed;
   background-size: cover;
