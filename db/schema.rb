@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141201082449) do
+ActiveRecord::Schema.define(version: 20141201201656) do
+
+  create_table "others", force: true do |t|
+    t.string   "title"
+    t.text     "desc"
+    t.string   "bg",         default: "rgb(34,34,34)"
+    t.integer  "startup_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "others", ["startup_id"], name: "index_others_on_startup_id"
 
   create_table "reasons", force: true do |t|
     t.string   "title"
@@ -49,6 +60,7 @@ ActiveRecord::Schema.define(version: 20141201082449) do
     t.datetime "updated_at",                 null: false
     t.string   "job"
     t.boolean  "maybe",      default: false
+    t.string   "slug"
   end
 
 end

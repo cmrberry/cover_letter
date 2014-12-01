@@ -69,10 +69,25 @@
   	</div>
   </section>
   
-  <section id="slide-5">
+  <% if @startup.others %>
+	  <% @startup.others.each do |o| %>
+	  <section id="slide-5">
+	  	<div class="bcg" style="background:<%=raw o.bg %>">
+	    	<div class="hsContainer">
+	    		<div class="hsContent" data-bottom-top="opacity: 0" data-center-top="opacity: 1" data-anchor-target="#slide-5 h1">
+		    		<h1><%= o.title %></h1>
+		    		<%=raw o.desc %>
+	    		</div>
+	      </div>
+	  	</div>
+	  </section>
+	  <% end %>
+  <% end %>
+  
+  <section id="slide-6">
   	<div class="bcg">
     	<div class="hsContainer">
-    		<div class="hsContent" data-100-end="opacity: 0" data-end="opacity: 1" data-anchor-target="#slide-5 p">
+    		<div class="hsContent" data-100-end="opacity: 0" data-end="opacity: 1" data-anchor-target="#slide-6 p">
 	    		<h1>TL;DR:</h1>
 	    		<p>You're a fast-growing company who needs a quick learner to help build your awesome product and culture. That's me.<br />
 	    				Check out the links below for more info and then <%= link_to("get in touch", "mailto:crb@berrycs.com") %>!</p>
@@ -80,6 +95,7 @@
       </div>
   	</div>
   </section>
+  
   
 </main>
 	
@@ -129,7 +145,7 @@
     myHeight = document.body.clientHeight;
   };
   
-  if ( myWidth >= 768 ) {
+  if ( myWidth > 1024 ) {
   	
 	//window.alert( 'Width = ' + myWidth );
 	

@@ -1,6 +1,13 @@
 class Startup < ActiveRecord::Base
   has_many :reqs
   has_many :reasons
+  has_many :others
+
+  validates_presence_of :slug
+
+  def to_param
+    slug
+  end
   
   validates :name,  presence: true, length: { maximum: 50,
                                       too_long: "Max char count is %{count}!"}
