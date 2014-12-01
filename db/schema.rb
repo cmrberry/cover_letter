@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141128065925) do
+ActiveRecord::Schema.define(version: 20141201082449) do
 
   create_table "reasons", force: true do |t|
     t.string   "title"
@@ -45,9 +45,10 @@ ActiveRecord::Schema.define(version: 20141128065925) do
     t.string   "logo"
     t.string   "header"
     t.integer  "ranking"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.string   "job"
+    t.boolean  "maybe",      default: false
   end
 
 end

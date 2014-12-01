@@ -6,7 +6,7 @@
     	<div class="hsContainer">
   		<div class="hsContent" data-200-top="opacity: 1" data-top="opacity: 0" data-anchor-target="#slide-1 h2">
   			<h1>Hey <%= image_tag( @startup.logo, alt: @startup.name + " Logo", width: "100px", height: "auto") %>!</h1>
-    		<h2>I heard you're looking for a <%= @startup.job %></h2>
+    		<h2>I heard <%= @startup.maybe ? "you might be" : "you're" %> looking for a <%= @startup.job %></h2>
     		<h3>and I think I can help.</h3>
   		</div>
     	</div>
