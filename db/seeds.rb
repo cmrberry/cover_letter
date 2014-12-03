@@ -6,15 +6,17 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-startup = Startup.create( name: "Buffer", 
+buffer = Startup.create( name: "Buffer", 
                           domain: "http://www.bufferapp.com/", 
                           desc: "transforming social media with happiness and transparency", 
                           logo: "https://bufferapp.com/images/press/logo-icon.png", 
                           header: "https://open.bufferapp.com/wp-content/uploads/2014/05/hackpad.com_wGFjelPr9og_p.58032_1399592424677_Bufferonrock.jpg", 
                           ranking: 10, 
-                          job: "developer")
+                          job: "developer",
+                          slug: "buffer",
+                          maybe: true)
 
-startup.reqs.create([
+buffer.reqs.create([
   { title: "Full-Stack Developer", 
     desc:  "You're looking for a full-stack developer who's comfortable working and jumping into platforms and various code bases. This site was built from scratch on Linux, using Ruby on Rails, SCSS, CoffeeScript, Skrollr.js and some other cool little features like FontAwesome. It sits on a SQLite3 DB in test, and on PostgreSQL in Heroku Production. <a href='https://github.com/berrycs/cover_letter' target='_blank'>It's stored on GitHub.</a> There are a lot of parts to Buffer's stack that aren't here, but I'm excited to dive in and learn them!", 
     sort: 1
@@ -28,7 +30,7 @@ startup.reqs.create([
     sort: 3
   }])
   
-startup.reasons.create([
+buffer.reasons.create([
   { title: "I love the product!",
     desc: "If you couldn't tell that I love Buffer from the \"Passionate About Buffer\" section above, I don't know what else to say! It's an amazing product that all of your customers (including me) very obviously LOVE using, which says so much! The opportunity to work with the Buffer team and customers to make it even better is beyond exciting and I can't wait to get started :) ",
     img: "https://s3.amazonaws.com/screenshots.angel.co/aa/21604/9516b189ece0539a95c06f16448b30f5-original.png",
@@ -45,15 +47,19 @@ startup.reasons.create([
     sort: 3
   }])
   
-  nb = Startup.create( name: "Nation Builder", 
-                          domain: "http://www.nationbuilder.com/", 
-                          desc: "transforming social media with happiness and transparency", 
-                          logo: "https://bufferapp.com/images/press/logo-icon.png", 
-                          header: "https://open.bufferapp.com/wp-content/uploads/2014/05/hackpad.com_wGFjelPr9og_p.58032_1399592424677_Bufferonrock.jpg", 
-                          ranking: 10, 
-                          job: "developer")
+  
+  
+hulu = Startup.create( name: "Hulu", 
+                          domain: "http://www.hulu.com/", 
+                          desc: "redefining and reinventing the TV-viewing experience", 
+                          logo: "http://cdn.embed.ly/providers/logos/hulu.png", 
+                          header: "https://media.licdn.com/media/p/7/005/03f/398/3ec157e.png", 
+                          ranking: 9.5, 
+                          job: "software dev intern",
+                          slug: "hulu",
+                          maybe: true)
 
-nb.reqs.create([
+hulu.reqs.create([
   { title: "Full-Stack Developer", 
     desc:  "You're looking for a full-stack developer who's comfortable working and jumping into platforms and various code bases. This site was built from scratch on Linux, using Ruby on Rails, SCSS, CoffeeScript, Skrollr.js and some other cool little features like FontAwesome. It sits on a SQLite3 DB in test, and on PostgreSQL in Heroku Production. <a href='https://github.com/berrycs/cover_letter' target='_blank'>It's stored on GitHub.</a> There are a lot of parts to Buffer's stack that aren't here, but I'm excited to dive in and learn them!", 
     sort: 1
@@ -67,7 +73,7 @@ nb.reqs.create([
     sort: 3
   }])
   
-nb.reasons.create([
+hulu.reasons.create([
   { title: "I love the product!",
     desc: "If you couldn't tell that I love Buffer from the \"Passionate About Buffer\" section above, I don't know what else to say! It's an amazing product that all of your customers (including me) very obviously LOVE using, which says so much! The opportunity to work with the Buffer team and customers to make it even better is beyond exciting and I can't wait to get started :) ",
     img: "https://s3.amazonaws.com/screenshots.angel.co/aa/21604/9516b189ece0539a95c06f16448b30f5-original.png",
