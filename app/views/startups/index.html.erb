@@ -9,7 +9,7 @@
 	
 	<div class="container startups">
 		<% @startups.each do |s| %>
-			<figure class="effect col-xs-6 col-md-4 col-lg-3 col-centered">
+			<figure class="effect col-xs-6 col-md-4 col-lg-3">
 				<%= image_tag(s.logo, alt: s.name + " logo", class: "logo", width:"100%", height: "auto" ) %>
 				<figcaption>
 					<div>

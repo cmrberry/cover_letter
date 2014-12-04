@@ -70,6 +70,18 @@ body {
   }
 }
 
+
+.col-xs-6 { width: 49%; }
+
+@media (min-width: 992px) {
+	.col-md-4 { width: 32%; }
+}
+
+@media (min-width: 1200px) { 
+	.col-lg-3 { width: 22%; }
+}
+
+
 /*---------------*/
 /***** Effect *****/
 /*---------------*/
@@ -77,12 +89,13 @@ body {
 /* Common style */
 figure {
 	position: relative;
-	float: left;
+	float: none;
 	overflow: hidden;
-	//margin: 10px 1%;
-	//min-width: 320px;
-	//max-width: 480px;
-	//max-height: 360px;
+	margin: .5%;
+	min-width: 240px;
+	max-width: 360px;
+	min-height: 240px;
+	max-height: 360px;
 	//width: 48%;
 	background: rgba(255, 255, 255, 0.5);
 	text-align: center;
@@ -131,8 +144,10 @@ figure figcaption > a {
 }
 
 figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
+word-spacing: -0.15em;
+font-weight: 400;
+font-size: 1.5em;
+text-shadow: black 3px 2px 5px;
 }
 
 figure h2 span {
@@ -203,4 +218,10 @@ figure.effect:hover p {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+}
+
+figcaption > div {
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
