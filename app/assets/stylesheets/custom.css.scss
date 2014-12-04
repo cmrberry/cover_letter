@@ -47,6 +47,8 @@ textarea {
   padding: 20% 0 0 0;
 }
 
+
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -210,6 +212,14 @@ footer {
   }
 }
 
+@media (max-width: 1024px) {
+  .fa-stack {
+    font-size: 2em;
+  }
+  .footer .info {
+      font-size: 1em;
+  }
+}
 
 /* miscellaneous */
 
@@ -360,16 +370,31 @@ main {
   .owl-item {
     height:100%;
   }
-  .reason {
-    width: 50%;
-    min-height: 500px;
-    margin: 0 auto;
-    padding:5%;
-    background: rgba(0,0,0,.7);
-    p {
-      color:$gray-lighter;
+  
+   .reason {
+      width: 100%;
+      min-height: 500px;
+      margin: 0 auto;
+      padding:5%;
+      background: rgba(0,0,0,.7);
+      p {
+        color:$gray-lighter;
+      }
+    }
+  
+  @media (min-width: 1025px) {
+    .reason {
+      width: 50%;
+      min-height: 500px;
+      margin: 0 auto;
+      padding:5%;
+      background: rgba(0,0,0,.7);
+      p {
+        color:$gray-lighter;
+      }
     }
   }
+  
   .owl-controls {
     margin-top: -60px;
   }
