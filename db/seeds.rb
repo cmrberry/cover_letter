@@ -97,7 +97,7 @@ buffer.reasons.create([
 ##################################
 
 resource_guru = Startup.create( name: "Resource Guru", 
-                          domain: "http://www.resourceguru.com/", 
+                          domain: "http://www.resourceguruapp.com/", 
                           desc: "resource scheduling the easy way", 
                           logo: "http://resourceguruapp.com/assets/marketing/team-Saas-Devi-0a0f11ebbd0873be722567e045d87d9e.png", 
                           header: "http://2k32ud1ys2bmgizfb2ag6q164g.wpengine.netdna-cdn.com/wp-content/themes/resource_guru_2012/images/background-header.jpg", 
@@ -138,5 +138,51 @@ resource_guru.reasons.create([
     title: "I love the style!",
     desc: "From the Random Acts of Cake to the incredibly fun and helpful style of the RG blog posts, there's just something I love about your style ;) The fact that you all are getting stuff done and still having fun is something I can definitely appreciate! You say that you think of RG as a family, and it shows! It seems like a family I'd love to be a part of!",
     img: "http://2k32ud1ys2bmgizfb2ag6q164g.wpengine.netdna-cdn.com/wp-content/uploads/2014/10/Leckerhaus-RandomCake4.jpg",
+    sort: 3
+  }])
+  
+    
+##################################  
+### NATIONBUILDER COVER LETTER ###
+##################################
+
+nb = Startup.create( name: "NationBuilder", 
+                          domain: "http://www.nationbuilder.com/", 
+                          desc: "building the infrastructure for a world of creators", 
+                          logo: "http://www.jaysocial.com/wp-content/uploads/2014/08/nation-builder-black.png", 
+                          header: "https://d3n8a8pro7vhmx.cloudfront.net/3dna/pages/5898/attachments/original/1412374137/team2014-4.jpg?1412374137", 
+                          ranking: 8, 
+                          job: "software developer intern",
+                          slug: "nb",
+                          maybe: false)
+
+nb.reqs.create([
+  { title: "Passionate Up-and-Coming Developer", 
+    desc:  "You're looking for someone who's comfortable working with and jumping into different languages and platforms. This site was built from scratch on Linux, using Ruby on Rails, SCSS, CoffeeScript, Skrollr.js and some other cool little features like FontAwesome. It sits on a SQLite3 DB in test, and on PostgreSQL in Heroku Production. <a href='https://github.com/berrycs/cover_letter' target='_blank'>It's stored on GitHub.</a> There are a lot of parts to NationBuilder's stack that aren't here, but I'm excited to dive in and learn them!", 
+    sort: 1
+  },{
+    title: "Always Curious Techie", 
+    desc: "In a fast growing startup like NationBuilder, you need people who can learn on the job and pick up any technology quickly. Coming from an industrial engineering background and diving headfirst into data analysis, technical customer support, and (of course) all things web development, I have a knack and love for picking up new skills. I'm learning new things every day and finding ways to implement them in real-life examples (like this site!) as soon as I pick something up. One of my old managers always used to tell me that I don't take enough credit for how quickly I learn, but I feel like this is really more of a gift I was born with, and I'm so thankful for it! Being an expert Googler doesn't hurt either ;)", 
+    sort: 2
+  },{
+    title: "Detail Oriented", 
+    desc: "Whether in communication, code, or keeping my closet organized by color and style, details have always mattered to me. I'm always looking for ways to continue improving my life in general and my work in particular. This yearning for learning keeps me growing and always on my toes!", 
+    sort: 3
+  }])
+  
+nb.reasons.create([
+  { title: "I love the product!",
+    desc: "Even taking just a brief spin through the feature tour on the NationBuilder website makes it completely obvious that you've built the most comprehensive and beautiful application a passionate community builder could hope for. Working on a product that I know customers will love is a requirement for me, and NationBuilder is a perfect example of an application accomplishing something meaningful!",
+    img: "https://d3n8a8pro7vhmx.cloudfront.net/3dna/pages/4831/attachments/original/1383075606/comments.png?1383075606",
+    sort: 1
+  },{
+    title: "I love the pace!",
+    desc: "It's obvious from the <a href='http://nationbuilder.com/about' target='_blank'>NationBuilder timeline</a> that your company is growing at in incredible rate. The team is working hard to keep up (thus the hiring) and I'm sure that there is never a dull day. That exciting, fast-paced sort of environment is where I really shine! I thrive in situations where I can use my ability to learn quickly and adapt to new information. That's why I started doing consulting, and that same love for continuous improvement is what has led me to think that NationBuilder would be a perfect fit!",
+    img: "https://d3n8a8pro7vhmx.cloudfront.net/3dna/pages/3848/attachments/original/1369180289/IMG_0229.JPG?1369180289",
+    sort: 2
+  },{
+    title: "I love the mission!",
+    desc: "From Jim Gilliam's incredibly powerful 'internet is my religion' speech to the five NationBuilder beliefs, there is no room for doubt that this is a mission-driven company. Like you've pointed out, the opportunity to learn how to be a software developer while helping to build something truly important is an amazing chance to dive in and make a difference at a company making a difference... And an opportunity I just can't pass up.",
+    img: "https://d3n8a8pro7vhmx.cloudfront.net/3dna/pages/7791/attachments/original/1411768808/jim-pdf4.jpg?1411768808",
     sort: 3
   }])

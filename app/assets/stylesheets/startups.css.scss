@@ -112,7 +112,7 @@ figure img {
 }
 
 figure figcaption {
-	padding: 2em;
+	padding: 1.8em;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.25em;
@@ -179,9 +179,6 @@ figure.effect:hover img {
 	transform: scale(1);
 }
 
-figure.effect figcaption {
-	padding: 3em;
-}
 
 figure.effect figcaption::before {
 	position: absolute;
