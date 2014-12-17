@@ -186,3 +186,55 @@ nb.reasons.create([
     img: "https://d3n8a8pro7vhmx.cloudfront.net/3dna/pages/7791/attachments/original/1411768808/jim-pdf4.jpg?1411768808",
     sort: 3
   }])
+  
+  
+##################################  
+###### MAILPOET COVER LETTER #####
+##################################
+
+mailpoet = Startup.create( name: "MailPoet", 
+                          domain: "http://www.mailpoet.com/", 
+                          desc: "making WordPress newsletters fun", 
+                          logo: "https://pbs.twimg.com/profile_images/489112858081239040/8JSJlmjA.png", 
+                          header: "http://www.mailpoet.com/wp-content/themes/wysija/images/pattern-background.png", 
+                          ranking: 7, 
+                          job: "support & community guru",
+                          slug: "mailpoet",
+                          maybe: false)
+
+mailpoet.reqs.create([
+  { title: "Experienced Support Guru", 
+    desc:  "Tough technical questions? I'm on it. Need to make sure new users understand what they're doing? Call me in! At JOC Group, a Shipping DaaS company, I spent my time helping our biggest customers use our product in the best way possible. Since opening my own tech consulting company on the side, I've helped my clients with everything from setting up WordPress sites to integrating cloud apps with their existing systems. I know how to track and solve tickets in ZenDesk, SalesForce, HelpScout, and Groove just to name a few, and I'm always learning more tricks!", 
+    sort: 1
+  },{
+    title: "Always Curious Techie", 
+    desc: "In a company like MailPoet, you need people who can learn on the job and pick up any technology quickly. Coming from an industrial engineering background and diving headfirst into data analysis, web development, and (of course) technical customer support, I have a knack and love for picking up new things. I'm learning new skills every day and finding ways to implement them in real-life examples (like this site, hacked together on Rails!) as soon as I pick something up. One of my old managers always used to tell me that I don't take enough credit for how quickly I learn, but I feel like this is really more of a gift I was born with, and I'm so thankful for it! Being an expert Googler doesn't hurt either ;)", 
+    sort: 2
+  },{
+    title: "Passionate Communicator", 
+    desc: "Every support & community guru knows that communication is key! That's why you need someone with a love for writing... but you also need someone who can communicate technical ideas in a clear way! I've been doing that with process documentation since my days as an intern at Lockheed Martin, and I haven't stopped since. Check out a recent piece I wrote on <a href='https://medium.com/@cmrberry/git-started-b6414f8ffef4' target='_blank'>getting started with Git and GitHub</a>, based on my own experience :) I'd also totally love to help with the MailPoet blog! I have some newsletter marketing experience myself, and I think that would make for some great posts on how to make the most of your awesome plugin!", 
+    sort: 3
+  },{
+    title: "WordPress-loving Freelancer", 
+    desc: "I've been working with WordPress sites for almost a decade, and I've definitely come to love and look forward to each new site I set up for a client. I'm up to about 23 sites, and recently my favorite theme has been Jupiter, a really intuitive and responsive multipurpose theme that is a snap to set up and customize for clients. Check out my <a href='http://www.berrycs.com' target='_blank'>freelance / consulting website</a> to see it in action :) ", 
+    sort: 4
+    }])
+  
+mailpoet.reasons.create([
+  { title: "I love the product!",
+    desc: "I'm no newbie to MailPoet. I've used it myself and set it up on several client sites, so I know how to work my way around enough to know that it's an amazing addition to the WordPress lineup! It's no wonder you guys have over 100K active installs, and I'd love to help your users fall in love with MailPoet even more!",
+    img: "http://www.mailpoet.com/wp-content/uploads/2013/06/fan-new-themes-490px.png",
+    sort: 1
+  },{
+    title: "I love the pace!",
+    desc: "It's obvious from the <a href='http://www.mailpoet.com/mailpoet-version-3/' target='_blank'>blog about the upcoming V3</a> that your company is growing at in incredible rate. The team is working hard to keep up (thus the hiring) and I'm sure that there is never a dull day. That exciting, fast-paced sort of environment is where I really shine! I thrive in situations where I can use my ability to learn quickly and adapt to new information. That's why I started doing freelancing, and that same love for continuous improvement is what has led me to think that MailPoet would be a perfect fit!",
+    img: "http://www.mailpoet.com/wp-content/uploads/2013/11/infographic-support-mailpoet.png",
+    sort: 2
+  },{
+    title: "I love the style!",
+    desc: "From the MailPoet values of transparency, making a difference, and doing what’s right, I can tell that there's just something I love about your style ;) The fact that you all are getting stuff done and still having fun is something I can definitely appreciate! A sane working environment is always a plus also ;) All in all, it sounds like I'd love to show off my smile on your team page... besides, you need some US representation there :D",
+    img: "http://support.mailpoet.com/files/2011/12/new-support-team.jpg",
+    sort: 3
+  }])
+  
+  
