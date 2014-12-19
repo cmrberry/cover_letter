@@ -18,10 +18,10 @@ class Startup < ActiveRecord::Base
   validates :ranking, presence: true, numericality: {greater_than_or_equal_to: 0, less_than_or_equal_to: 10}
   
   VALID_IMG_REGEX = /[a-z\d]+\.(jpg|jpeg|png|gif|bmp)/i
-  validates :logo, presence: true, length: { maximum: 255 },
-                    format: { with: VALID_IMG_REGEX }  
-  validates :header, presence: true, length: { maximum: 255 },
-                    format: { with: VALID_IMG_REGEX }
+  validates :logo, presence: true, length: { maximum: 255 }
+                    #,format: { with: VALID_IMG_REGEX }  
+  validates :header, presence: true, length: { maximum: 255 }
+                    #,format: { with: VALID_IMG_REGEX }
                     
   VALID_URL_REGEX = /\A(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?\z/ix
   validates :domain, presence: true, length: { maximum: 999 },

@@ -232,9 +232,58 @@ mailpoet.reasons.create([
     sort: 2
   },{
     title: "I love the style!",
-    desc: "From the MailPoet values of transparency, making a difference, and doing what’s right, I can tell that there's just something I love about your style ;) The fact that you all are getting stuff done and still having fun is something I can definitely appreciate! A sane working environment is always a plus also ;) All in all, it sounds like I'd love to show off my smile on your team page... besides, you need some US representation there :D",
+    desc: "From the MailPoet values of transparency, making a difference, and doing what's right, I can tell that there's just something I love about your style ;) The fact that you all are getting stuff done and still having fun is something I can definitely appreciate! A sane working environment is always a plus also ;) All in all, it sounds like I'd love to show off my smile on your team page... besides, you need some US representation there :D ",
     img: "http://support.mailpoet.com/files/2011/12/new-support-team.jpg",
     sort: 3
   }])
   
+    
+##################################  
+### GUMGUM COVER LETTER ###
+##################################
+
+gumgum = Startup.create( name: "GumGum", 
+                          domain: "http://www.gumgum.com/", 
+                          desc: "making advertising work better", 
+                          logo: "gumgum.png", 
+                          header: "https://pbs.twimg.com/profile_banners/32904892/1399320943/", 
+                          ranking: 6, 
+                          job: "web engineering intern",
+                          slug: "gumgum",
+                          maybe: false)
+
+gumgum.reqs.create([
+  { title: "Up-and-Coming Developer", 
+    desc:  "You're looking for someone who's comfortable working with and jumping into different languages and platforms. This site was built from scratch on Linux, using Ruby on Rails, Bootstrap, SCSS, CoffeeScript, Skrollr.js and some other cool little features like FontAwesome. It sits on a SQLite3 DB in test, and on PostgreSQL in Heroku Production. <a href='https://github.com/berrycs/cover_letter' target='_blank'>It's stored on GitHub.</a> There are a lot of parts to GumGum's stack that aren't here, but I'm excited to dive in and learn them!", 
+    sort: 1
+  },{
+    title: "Always Curious Techie", 
+    desc: "In a fast growing startup like GumGum, you need people who can learn on the job and pick up any technology quickly. Coming from an industrial engineering background and diving headfirst into data analysis, technical customer support, and (of course) all things web development, I have a knack and love for picking up new skills. I'm learning new things every day and finding ways to implement them in real-life examples (like this site!) as soon as I pick something up. One of my old managers always used to tell me that I don't take enough credit for how quickly I learn, but I feel like this is really more of a gift I was born with, and I'm so thankful for it! Being an expert Googler doesn't hurt either ;)", 
+    sort: 2
+  },{
+    title: "Support-oriented Communicator", 
+    desc: "In a startup, everyone plays a customer support role in some way, so communication is key! That's why you need someone with a love for writing... but you also need someone who can communicate technical ideas in a clear way! I've been doing that with process documentation since my days as an intern at Lockheed Martin, and I haven't stopped since. Check out a recent piece I wrote on <a href='https://medium.com/@cmrberry/git-started-b6414f8ffef4' target='_blank'>getting started with Git and GitHub</a>, based on my own experience :) That love for communicating clearly helps me understand and teach clients in my own side consulting business, and that would translate to everything I do at GumGum as well!", 
+    sort: 3
+  },{
+    title: "Experience in Advertising", 
+    desc: "While I may not have experience in the creative side of advertising, I've been interested in the analytics side of things for quite sometime now. I even have my Google Analytics IQ Certification to prove it. And as with everything else, I'm always eager to learn new skills and pick up new passions, so I'd love to give advertising a more in-depth look!", 
+    sort: 4
+  }])
+  
+gumgum.reasons.create([
+  { title: "I love the product!",
+    desc: "Even taking just a brief spin through the advertising demos tour on the GumGum website makes it completely obvious that you've built a company that is doing revolutionary things in the advertising industry. Working on a product that I know customers will love is a requirement for me, and GumGum is a perfect example of an startup accomplishing something that clients are drawn to!",
+    img: "http://gumgum.com/images/pages/homepage/home-day-middle.jpg",
+    sort: 1
+  },{
+    title: "I love the pace!",
+    desc: "It's obvious from the <a href='http://blog.gumgum.com/2014/11/gumgum-ranked-as-top-5-ad-platform/' target='_blank'>Quantcast report</a> that your company is growing at in incredible rate. The team is working hard to keep up (thus the hiring) and I'm sure that there is never a dull day. That exciting, fast-paced sort of environment is where I really shine! I thrive in situations where I can use my ability to learn quickly and adapt to new information. That's why I started doing consulting, and that same love for continuous improvement is what has led me to think that GumGum would be a perfect fit!",
+    img: "http://blog.gumgum.com/wp-content/uploads/2014/11/unnamed.png",
+    sort: 2
+  },{
+    title: "I love the style!",
+    desc: "From the office on Santa Monica beach to holiday parties at the Hollywood Magic Castle, it's obvious that GumGum works hard but still has plenty of fun :) Just from meeting some of the team at TechWeekLA, I could already tell that the GumGum team loves what they do, and I'd love to be a part of that! ",
+    img: "http://gumgum.com/images/pages/careers/team-photo.jpg",
+    sort: 3
+  }])
   
